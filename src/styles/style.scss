@@ -63,10 +63,10 @@ $spacing-25: 2px;
 .role{
     font-size: $fs-700;
     font-weight: 400;
-    opacity: 0.5;
+    opacity: 0.5; 
 } 
 body{
-    background-image: url(src/assets/destination/background-destination-desktop.jpg);
+    background-image: url(assets/destination/background-destination-desktop.jpg);
     margin: 0;
     box-sizing: border-box;
     font-family: "Bellefair", serif;

@@ -1,12 +1,28 @@
-# React + Vite
+# 🚀 Space Tourism Multi-Page Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is part of a *Frontend Mentor challenge, where I built a **multi-page space tourism website*. The challenge focused on implementing a fully responsive website with multiple pages, structured design elements, and dynamic content.
 
-Currently, two official plugins are available:
+## 📌 Objective
+The main goal of the challenge was to *replicate a high-fidelity design* using HTML, CSS, and JavaScript. It required implementing *dynamic navigation, page transitions, and responsive layouts* while maintaining accessibility and best practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Technologies Used
+- *HTML* – Structuring the content
+- *React* – First experience using React for component-based development
+- *SASS* – Styling with better maintainability and nesting capabilities
+- *Vite* – Project bundling and fast development environment
 
-## Expanding the ESLint configuration
+## 🎯 What I Learned
+This project marked my *first experience with React and SASS*. I learned:
+- How to *create reusable components* in React
+- Managing *useState and useEffect* effectively
+- Handling *routing* for a multi-page experience
+- Using *SCSS variables, mixins, and nesting* for cleaner styles
+- Understanding *Vite's fast and optimized build process*
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Live Demo
+Check out the live preview: *https://lay2ss.github.io/space-tourism-multi-page-website/*
+
+![Preview](assets/screenshot.png.jpg)
+
+## 💡 Reflections
+This challenge was an *exciting first step into React and SASS*. I enjoyed learning how to build scalable UI components and improving my workflow with modern technologies.

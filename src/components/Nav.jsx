@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useContext, useState, useEffect, useRef } from "react";
 import { BackgroundContext } from "./BackgroundContext";
 
@@ -73,8 +73,8 @@ function Nav() {
                 styleToggleNav("style", list);       
             }
         }
-    const url = window.location.pathname;
-        const onload = () => {switch(url){
+    const url = useLocation();
+        const onload = () => {switch(url.pathname){
                 case "/":
                     handleOnloadStyle(0);
                     changeBg(0);
@@ -91,7 +91,7 @@ function Nav() {
                     handleOnloadStyle(3);
                     changeBg(3);
             }}
-    useEffect(() => onload, []) 
+    useEffect(() => onload(), [url.pathname]) 
     window.addEventListener("resize", () => handleStyle());
 
     (function removeListener() {
@@ -101,7 +101,7 @@ function Nav() {
     return (
         <>
             <div className="div-home-nav">
-                    <div className="div-logo"><img src="/src/assets/shared/logo.svg" alt="logo image" /></div> 
+                    <div className="div-logo"><img src="assets/shared/logo.svg" alt="logo image" /></div> 
                     <div className="horizontal-row" ><hr /></div>
                     <div ref={elementRefNav} aria-expanded={aria} className="div-list-home">
                         <ul>
@@ -110,9 +110,9 @@ function Nav() {
                             <li onClick={() => {changeBg(2), changeAria(), handleStyle(2)}}><Link to="/crew"><span>02</span> CREW</Link></li>
                             <li onClick={() => {changeBg(3), changeAria(), handleStyle(3)}}><Link to="/technology"><span>03</span> TECHNOLOGY</Link></li>
                         </ul>
-                            <img className="icon" id="closeIcon" onClick={changeAria} src="src/assets/shared/icon-close.svg" alt="close icon" />
+                            <img className="icon" id="closeIcon" onClick={changeAria} src="assets/shared/icon-close.svg" alt="close icon" />
                     </div>
-                    <img ref={elementRefIcon} className="icon" onClick={() => {changeAria()}} src="src/assets/shared/icon-hamburger.svg" alt="hamburger icon" />
+                    <img ref={elementRefIcon} className="icon" onClick={() => {changeAria()}} src="assets/shared/icon-hamburger.svg" alt="hamburger icon" />
             </div>
         </>
     );
