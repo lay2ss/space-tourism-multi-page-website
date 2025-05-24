@@ -1,6 +1,6 @@
 # 🚀 Space Tourism Multi-Page Website
 
-This project is part of a *Frontend Mentor challenge, where I built a **multi-page space tourism website*. The challenge focused on implementing a fully responsive website with multiple pages, structured design elements, and dynamic content.
+This project is part of a *Frontend Mentor challenge, where I built a* **multi-page space tourism website**. The challenge focused on implementing a fully responsive website with multiple pages, structured design elements, and dynamic content.
 
 ## 📌 Objective
 The main goal of the challenge was to *replicate a high-fidelity design* using HTML, CSS, and JavaScript. It required implementing *dynamic navigation, page transitions, and responsive layouts* while maintaining accessibility and best practices.
@@ -24,5 +24,3 @@ Check out the live preview: *https://lay2ss.github.io/space-tourism-multi-page-w
 
 ![Preview](assets/screenshot.png.jpg)
 
-## 💡 Reflections
-This challenge was an *exciting first step into React and SASS*. I enjoyed learning how to build scalable UI components and improving my workflow with modern technologies.
